@@ -1,3 +1,8 @@
+### Relatório 
+Iniciei  posicionando os LEDs vermelho, amarelo e verde na protoboard. A perna negativa de cada LED foi conectada à linha de aterramento (GND) da protoboard, usando jumpers amarelos e preto. A perna positiva de cada LED foi conectada a jumpers de cores específicas para cada LED: roxo para o pino 3 (LED vermelho), laranja para o pino 9 (LED amarelo) e vermelho para o pino 11 (LED verde) no Arduino. Em cada perna positiva, coloquei um resistor  para limitar a corrente e proteger os LEDs.
+
+Além da montagem, minha funcionalidade extra foi que  desenvolvi um código com funções para controlar as fases do semáforo. Inicialmente, defini os pinos dos LEDs com `#define` para facilitar o gerenciamento do código. A função `configurarPinos()` define cada pino como saída, permitindo o controle dos LEDs. Cada fase do semáforo é representada por uma função específica: `faseVermelho()` acende o LED vermelho por 6 segundos, `faseAmarelo()` acende o LED amarelo por 2 segundos, e `faseVerde()` acende o LED verde por 4 segundos. No `loop()`, essas funções são chamadas em sequência, criando o ciclo completo do semáforo.
+
 ### Avaliador: Davi Basã
 | Critério                                                                                                 | Contempla (Pontos) | Contempla Parcialmente (Pontos) | Não Contempla (Pontos) | Nota atribuída | Observações do Avaliador |
 |---------------------------------------------------------------------------------------------------------|--------------------|----------------------------------|--------------------------|----------------|--------------------------|
